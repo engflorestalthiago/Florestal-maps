@@ -30,25 +30,19 @@ const AboutSection = () => {
                       ponto de partida para conhecer meu trabalho.
                     </p>
                     
-                    <div className="bg-primary/5 rounded-xl p-6 border-l-4 border-primary">
-                      <h3 className="font-montserrat font-semibold text-xl mb-3 text-primary">
+                    
                         
                       </h3>
-                      <ul className="space-y-2">
-                        <li className="font-montserrat text-muted-foreground flex items-center">
-                          <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                      
+                      
+          
                           
-                        </li>
-                        <li className="font-montserrat text-muted-foreground flex items-center">
-                          <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                
+                        
                           
-                        </li>
-                        <li className="font-montserrat text-muted-foreground flex items-center">
-                          <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                      
                           
-                        </li>
-                        <li className="font-montserrat text-muted-foreground flex items-center">
-                          <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                        
                           
                         </li>
                       </ul>

@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { MapPin, BarChart3, TrendingUp, Palette } from 'lucide-react';
+import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
+import { MapPin, BarChart3, TrendingUp, Palette, Eye } from 'lucide-react';
 
 interface MapItem {
   id: number;
@@ -81,7 +82,7 @@ const MapsSection = () => {
             {filteredMaps.map((map) => (
               <Card 
                 key={map.id} 
-                className="group bg-card/80 backdrop-blur-sm shadow-soft hover:shadow-forest border-border/50 hover:border-primary/30 rounded-2xl overflow-hidden transition-smooth cursor-pointer"
+                className="group bg-card/80 backdrop-blur-sm shadow-soft hover:shadow-forest border-border/50 hover:border-primary/30 rounded-2xl overflow-hidden transition-smooth"
               >
                 <CardContent className="p-0">
                   <div className="relative overflow-hidden">
@@ -91,6 +92,75 @@ const MapsSection = () => {
                       className="w-full h-64 object-cover transition-smooth group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-smooth" />
+                    
+                    {/* Ver Detalhes Button */}
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button
+                          variant="secondary"
+                          size="sm"
+                          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-smooth bg-white/90 hover:bg-white text-foreground backdrop-blur-sm border border-white/50 font-montserrat font-medium"
+                        >
+                          <Eye className="w-4 h-4 mr-2" />
+                          Ver Detalhes
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-4xl w-full h-[80vh] p-0">
+                        <div className="flex flex-col lg:flex-row h-full">
+                          {/* Image Section */}
+                          <div className="flex-1 relative">
+                            <img
+                              src={map.image}
+                              alt={map.title}
+                              className="w-full h-full object-contain bg-muted"
+                            />
+                          </div>
+                          
+                          {/* Details Section */}
+                          <div className="lg:w-1/3 p-6 bg-card border-l border-border overflow-y-auto">
+                            <h3 className="font-montserrat font-bold text-2xl mb-4 text-foreground">
+                              {map.title}
+                            </h3>
+                            <p className="font-montserrat text-muted-foreground mb-6 leading-relaxed">
+                              {map.description}
+                            </p>
+                            
+                            <div className="space-y-4">
+                              <div>
+                                <h4 className="font-montserrat font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-2">
+                                  Categoria
+                                </h4>
+                                <Badge 
+                                  variant="secondary"
+                                  className="bg-primary/10 text-primary border-primary/20 font-montserrat"
+                                >
+                                  {map.category === 'tematico' ? 'Temático' : 
+                                   map.category === 'localizacao' ? 'Localização' : 
+                                   map.category === 'analitico' ? 'Analítico' : 'Artístico'}
+                                </Badge>
+                              </div>
+                              
+                              <div>
+                                <h4 className="font-montserrat font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-3">
+                                  Tags
+                                </h4>
+                                <div className="flex flex-wrap gap-2">
+                                  {map.tags.map((tag, index) => (
+                                    <Badge 
+                                      key={index}
+                                      variant="outline"
+                                      className="font-montserrat text-xs border-border/50"
+                                    >
+                                      {tag}
+                                    </Badge>
+                                  ))}
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </DialogContent>
+                    </Dialog>
                   </div>
                   
                   <div className="p-6">

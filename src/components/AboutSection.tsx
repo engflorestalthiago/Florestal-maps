@@ -32,24 +32,24 @@ const AboutSection = () => {
                     
                     <div className="bg-primary/5 rounded-xl p-6 border-l-4 border-primary">
                       <h3 className="font-montserrat font-semibold text-xl mb-3 text-primary">
-                        Especialidades
+                        #Especialidades
                       </h3>
                       <ul className="space-y-2">
                         <li className="font-montserrat text-muted-foreground flex items-center">
                           <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                          Mapeamento Temático e Analítico
+                          #Mapeamento Temático e Analítico
                         </li>
                         <li className="font-montserrat text-muted-foreground flex items-center">
                           <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                          Geotecnologias Ambientais
+                          #Geotecnologias Ambientais
                         </li>
                         <li className="font-montserrat text-muted-foreground flex items-center">
                           <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                          Planejamento Florestal
+                          #Planejamento Florestal
                         </li>
                         <li className="font-montserrat text-muted-foreground flex items-center">
                           <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
-                          Visualização Cartográfica
+                          #Visualização Cartográfica
                         </li>
                       </ul>
                     </div>

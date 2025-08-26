@@ -17,13 +17,17 @@ const AboutSection = () => {
                   <div className="space-y-6">
                     <p className="font-montserrat text-lg leading-relaxed text-muted-foreground">
                       Sou <strong className="text-foreground font-semibold">Thiago Martins</strong>, 
-                      Engenheiro Florestal com especialização em geotecnologias aplicadas ao setor ambiental e florestal.
+                      Engenheiro Florestal e especialista em geoprocessamento, georreferenciamento e sensoriamento remoto.
                     </p>
                     
                     <p className="font-montserrat text-lg leading-relaxed text-muted-foreground">
-                      Minha paixão está em transformar dados complexos em visualizações cartográficas 
-                      claras e impactantes, contribuindo para a tomada de decisões estratégicas em 
-                      projetos de conservação, manejo florestal e planejamento ambiental.
+                      Minha atuação é focada em transformar dados espaciais em informações claras e aplicáveis para tomada de decisão. 
+                       
+                      Neste portfólio, apresento diferentes categorias de mapas, todos produzidos com atenção ao 
+                      detalhe e compromisso com resultados práticos, contribuindo para tomada de decisões estratégicas em 
+                      ambientais. Entregando soluções cartográficas que unam rigor técnico e design profissional.
+                      Se você busca apoio em projetos ambientais, florestais ou de geotecnologia, aqui está um 
+                      ponto de partida para conhecer meu trabalho.
                     </p>
                     
                     <div className="bg-primary/5 rounded-xl p-6 border-l-4 border-primary">

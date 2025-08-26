@@ -17,7 +17,7 @@ const AboutSection = () => {
                   <div className="space-y-6">
                     <p className="font-montserrat text-lg leading-relaxed text-muted-foreground">
                       Sou <strong className="text-foreground font-semibold">Thiago Martins</strong>, 
-                      engenheiro florestal com especialização em geotecnologias aplicadas ao setor ambiental e florestal.
+                      Engenheiro Florestal com especialização em geotecnologias aplicadas ao setor ambiental e florestal.
                     </p>
                     
                     <p className="font-montserrat text-lg leading-relaxed text-muted-foreground">

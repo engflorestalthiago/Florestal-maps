@@ -49,6 +49,30 @@ const MapsSection = () => {
       category: 'tematico',
       image: '/lovable-uploads/d10e981e-81db-49c1-8c03-c3bb7775fb6f.png',
       tags: []
+    },
+    {
+      id: 4,
+      title: 'Divisão Administrativa - Salvador/BA',
+      description: 'Mapeamento da região dos subdistritos e divisão dos bairros do município de Salvador, Bahia. Apresenta a divisão administrativa municipal com identificação de todos os bairros e suas respectivas delimitações territoriais.',
+      category: 'localizacao',
+      image: '/lovable-uploads/3d56d2d0-198e-4932-9986-c5289c479808.png',
+      tags: []
+    },
+    {
+      id: 5,
+      title: 'Localização da Bacia do Rio Capivari',
+      description: 'Mapa de localização da Bacia Hidrográfica do Rio Capivari com referenciamento espacial. Mostra a delimitação da bacia e sua localização no contexto estadual e nacional, utilizando imagem de satélite como base cartográfica.',
+      category: 'localizacao',
+      image: '/lovable-uploads/e2c5716d-7438-4f5b-8a6b-db4a38cf1405.png',
+      tags: []
+    },
+    {
+      id: 6,
+      title: 'Paisagens da Chapada Diamantina/BA',
+      description: 'Mapa de localização das principais paisagens e pontos turísticos do Parque Nacional da Chapada Diamantina, destacando atrativos como Morro do Pai Inácio, Lençóis, Cachoeira da Fumaça e Cachoeira do Funil.',
+      category: 'localizacao',
+      image: '/lovable-uploads/6f1482cb-52b3-4d7f-9c6f-3f4f72fde78d.png',
+      tags: []
     }
   ];
 

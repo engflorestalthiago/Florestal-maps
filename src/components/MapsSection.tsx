@@ -32,9 +32,24 @@ const MapsSection = () => {
       description: 'Mapeamento das áreas aptas, restritas e inaptas para o cultivo de Eucalyptus grandis na região da Bahia, considerando fatores pedológicos e climáticos.',
       category: 'tematico',
       image: '/lovable-uploads/6d3446a5-baa5-431f-b2b9-21085ee78661.png',
-      tags: ['Eucalipto', 'Zoneamento', 'Bahia', 'Silvicultura']
+      tags: []
     },
-    // Add more sample maps here when needed
+    {
+      id: 2,
+      title: 'Uso e Cobertura do Solo - Igrapiúna/BA',
+      description: 'Análise detalhada do uso e cobertura do solo no município de Igrapiúna, Bahia, utilizando dados do MapBiomas 2023. Identifica diferentes classes de uso como formação florestal, mangue, pastagem e áreas urbanas.',
+      category: 'tematico',
+      image: '/lovable-uploads/4c9ccced-9cf3-4249-bd7c-5434a253c34d.png',
+      tags: []
+    },
+    {
+      id: 3,
+      title: 'Análise de Queimadas - Chapada Diamantina/BA',
+      description: 'Estudo comparativo das queimadas no Parque Nacional da Chapada Diamantina através de índices NBR (Normalized Burn Ratio) em diferentes períodos, mostrando áreas pré e pós-queimada e grau de severidade.',
+      category: 'tematico',
+      image: '/lovable-uploads/d10e981e-81db-49c1-8c03-c3bb7775fb6f.png',
+      tags: []
+    }
   ];
 
   const filteredMaps = activeFilter === 'todos' 
@@ -140,22 +155,6 @@ const MapsSection = () => {
                                 </Badge>
                               </div>
                               
-                              <div>
-                                <h4 className="font-montserrat font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-3">
-                                  Tags
-                                </h4>
-                                <div className="flex flex-wrap gap-2">
-                                  {map.tags.map((tag, index) => (
-                                    <Badge 
-                                      key={index}
-                                      variant="outline"
-                                      className="font-montserrat text-xs border-border/50"
-                                    >
-                                      {tag}
-                                    </Badge>
-                                  ))}
-                                </div>
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -171,17 +170,6 @@ const MapsSection = () => {
                       {map.description}
                     </p>
                     
-                    <div className="flex flex-wrap gap-2">
-                      {map.tags.map((tag, index) => (
-                        <Badge 
-                          key={index}
-                          variant="secondary"
-                          className="bg-primary/10 text-primary border-primary/20 font-montserrat text-xs px-3 py-1 rounded-full"
-                        >
-                          {tag}
-                        </Badge>
-                      ))}
-                    </div>
                   </div>
                 </CardContent>
               </Card>

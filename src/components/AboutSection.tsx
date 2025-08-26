@@ -29,24 +29,6 @@ const AboutSection = () => {
                       Se você busca apoio em projetos ambientais, florestais ou de geotecnologia, aqui está um 
                       ponto de partida para conhecer meu trabalho.
                     </p>
-                    
-                    
-                        
-                      </h3>
-                      
-                      
-          
-                          
-                
-                        
-                          
-                      
-                          
-                        
-                          
-                        </li>
-                      </ul>
-                    </div>
                   </div>
                 </CardContent>
               </Card>

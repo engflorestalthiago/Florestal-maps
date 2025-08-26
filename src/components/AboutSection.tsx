@@ -1,0 +1,80 @@
+import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+
+const AboutSection = () => {
+  return (
+    <section id="about" className="py-20 bg-gradient-to-br from-background to-accent/20">
+      <div className="container mx-auto px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="font-montserrat font-bold text-4xl md:text-5xl lg:text-6xl text-center mb-16 text-foreground">
+            Sobre Mim
+          </h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 animate-slide-in">
+              <Card className="bg-card/80 backdrop-blur-sm shadow-soft border-border/50 rounded-2xl overflow-hidden">
+                <CardContent className="p-8">
+                  <div className="space-y-6">
+                    <p className="font-montserrat text-lg leading-relaxed text-muted-foreground">
+                      Sou <strong className="text-foreground font-semibold">Thiago Martins</strong>, 
+                      engenheiro florestal com especialização em geotecnologias aplicadas ao setor ambiental e florestal.
+                    </p>
+                    
+                    <p className="font-montserrat text-lg leading-relaxed text-muted-foreground">
+                      Minha paixão está em transformar dados complexos em visualizações cartográficas 
+                      claras e impactantes, contribuindo para a tomada de decisões estratégicas em 
+                      projetos de conservação, manejo florestal e planejamento ambiental.
+                    </p>
+                    
+                    <div className="bg-primary/5 rounded-xl p-6 border-l-4 border-primary">
+                      <h3 className="font-montserrat font-semibold text-xl mb-3 text-primary">
+                        Especialidades
+                      </h3>
+                      <ul className="space-y-2">
+                        <li className="font-montserrat text-muted-foreground flex items-center">
+                          <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                          Mapeamento Temático e Analítico
+                        </li>
+                        <li className="font-montserrat text-muted-foreground flex items-center">
+                          <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                          Geotecnologias Ambientais
+                        </li>
+                        <li className="font-montserrat text-muted-foreground flex items-center">
+                          <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                          Planejamento Florestal
+                        </li>
+                        <li className="font-montserrat text-muted-foreground flex items-center">
+                          <span className="w-2 h-2 bg-primary rounded-full mr-3"></span>
+                          Visualização Cartográfica
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="order-1 lg:order-2 flex justify-center animate-fade-in">
+              <div className="relative">
+                <div className="w-80 h-80 rounded-full overflow-hidden shadow-earth border-4 border-primary/20">
+                  <img
+                    src="/lovable-uploads/e38e74a0-9077-4177-bfdb-42acee6ea70f.png"
+                    alt="Thiago Martins - Engenheiro Florestal"
+                    className="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground rounded-full p-4 shadow-forest animate-float">
+                  <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutSection;

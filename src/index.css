@@ -2,87 +2,111 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Design system for Forestry Engineering Portfolio
+All colors MUST be HSL and inspired by nature/forestry
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Nature-inspired color palette */
+    --background: 45 20% 96%;
+    --foreground: 150 25% 15%;
+
+    /* Forest green palette */
+    --primary: 142 76% 32%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 142 60% 45%;
+    --primary-dark: 142 85% 25%;
+
+    /* Earth tones */
+    --secondary: 35 25% 88%;
+    --secondary-foreground: 150 25% 15%;
+    --earth: 25 40% 65%;
+    --earth-dark: 25 50% 45%;
+
+    /* Sky blues */
+    --accent: 200 75% 85%;
+    --accent-foreground: 200 85% 15%;
+    --sky: 200 65% 70%;
+    --sky-deep: 200 85% 45%;
+
+    /* Utility colors */
+    --muted: 45 15% 90%;
+    --muted-foreground: 150 15% 40%;
+    --border: 45 25% 85%;
+    --input: 45 25% 85%;
+    --ring: 142 76% 32%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 150 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --popover-foreground: 150 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --radius: 0.75rem;
 
-    --radius: 0.5rem;
+    /* Gradients for nature effects */
+    --gradient-forest: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 50%, hsl(var(--sky)) 100%);
+    --gradient-earth: linear-gradient(180deg, hsl(var(--earth)) 0%, hsl(var(--earth-dark)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(142 60% 35%) 25%, hsl(var(--sky-deep)) 100%);
+    
+    /* Shadows with natural tones */
+    --shadow-forest: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(var(--primary) / 0.15);
+    --shadow-earth: 0 8px 25px -5px hsl(var(--earth-dark) / 0.25);
+    
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
+    /* Sidebar colors */
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
+    --background: 150 25% 8%;
+    --foreground: 45 20% 95%;
+    
+    --primary: 142 70% 45%;
+    --primary-foreground: 150 25% 8%;
+    --primary-light: 142 60% 55%;
+    --primary-dark: 142 80% 35%;
+    
+    --secondary: 150 15% 15%;
+    --secondary-foreground: 45 20% 95%;
+    --earth: 25 30% 40%;
+    --earth-dark: 25 40% 25%;
+    
+    --accent: 200 50% 25%;
+    --accent-foreground: 200 75% 85%;
+    --sky: 200 45% 35%;
+    --sky-deep: 200 65% 25%;
+    
+    --muted: 150 15% 12%;
+    --muted-foreground: 150 10% 60%;
+    --border: 150 15% 18%;
+    --input: 150 15% 18%;
+    --ring: 142 70% 45%;
+    
+    --card: 150 20% 10%;
+    --card-foreground: 45 20% 95%;
+    
+    --popover: 150 20% 10%;
+    --popover-foreground: 45 20% 95%;
+    
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +124,29 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-montserrat;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/60 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/80;
   }
 }

@@ -44,22 +44,46 @@ const MapsSection = () => {
     },
     {
       id: 3,
-      title: 'Análise de Queimadas - Chapada Diamantina/BA',
-      description: 'Estudo comparativo das queimadas no Parque Nacional da Chapada Diamantina através de índices NBR (Normalized Burn Ratio) em diferentes períodos, mostrando áreas pré e pós-queimada e grau de severidade.',
-      category: 'tematico',
-      image: '/lovable-uploads/d10e981e-81db-49c1-8c03-c3bb7775fb6f.png',
-      tags: []
-    },
-    {
-      id: 4,
       title: 'Divisão Administrativa - Salvador/BA',
       description: 'Mapeamento da região dos subdistritos e divisão dos bairros do município de Salvador, Bahia. Apresenta a divisão administrativa municipal com identificação de todos os bairros e suas respectivas delimitações territoriais.',
-      category: 'localizacao',
+      category: 'tematico',
       image: '/lovable-uploads/3d56d2d0-198e-4932-9986-c5289c479808.png',
       tags: []
     },
     {
+      id: 4,
+      title: 'Mapa Hipsométrico - Mucugê/BA',
+      description: 'Análise altimétrica do município de Mucugê, Bahia, apresentando variações de altitude de 518 a 1.669 metros. Utiliza modelo digital de elevação (NASA DEM) para representar o relevo através de gradientes de cores, evidenciando as características topográficas da Chapada Diamantina.',
+      category: 'analitico',
+      image: '/lovable-uploads/mucuge-hipsometrico.png',
+      tags: []
+    },
+    {
       id: 5,
+      title: 'Análise de Queimadas NBR - Chapada Diamantina/BA',
+      description: 'Estudo comparativo detalhado das queimadas no Parque Nacional da Chapada Diamantina utilizando índices NBR (Normalized Burn Ratio). Analisa cenários pré-queimada (20/07/2021) e pós-queimada (30/09/2021), classificando o grau de severidade em diferentes categorias: alta regeneração, baixa regeneração, não queimada, baixa severidade, moderada severidade, alta severidade e severidade crítica.',
+      category: 'analitico',
+      image: '/lovable-uploads/queimadas-chapada-nbr.jpg',
+      tags: []
+    },
+    {
+      id: 6,
+      title: 'Impacto das Inundações - Eldorado do Sul/RS',
+      description: 'Análise comparativa do impacto das inundações em Eldorado do Sul utilizando índices NMDWI (Normalized Modified Difference Water Index) entre 2023 e 2024. O estudo identifica áreas alagadas através da comparação temporal, destacando as regiões mais afetadas pelos eventos de inundação no Rio Grande do Sul.',
+      category: 'analitico',
+      image: '/lovable-uploads/inundacoes-eldorado.png',
+      tags: []
+    },
+    {
+      id: 7,
+      title: 'Mudanças do Uso e Cobertura do Solo - Duque de Caxias/RJ',
+      description: 'Estudo temporal das transformações no uso e cobertura do solo em Duque de Caxias, Rio de Janeiro, no período de 2013-2023. Inclui análise de transições entre diferentes classes como formação florestal, áreas urbanas, pastagem, agricultura e corpos d\'água, apresentado através de diagramas de Sankey que quantificam as mudanças entre as categorias de uso.',
+      category: 'analitico',
+      image: '/lovable-uploads/mudancas-duque-caxias.png',
+      tags: []
+    },
+    {
+      id: 8,
       title: 'Localização da Bacia do Rio Capivari',
       description: 'Mapa de localização da Bacia Hidrográfica do Rio Capivari com referenciamento espacial. Mostra a delimitação da bacia e sua localização no contexto estadual e nacional, utilizando imagem de satélite como base cartográfica.',
       category: 'localizacao',
@@ -67,7 +91,7 @@ const MapsSection = () => {
       tags: []
     },
     {
-      id: 6,
+      id: 9,
       title: 'Paisagens da Chapada Diamantina/BA',
       description: 'Mapa de localização das principais paisagens e pontos turísticos do Parque Nacional da Chapada Diamantina, destacando atrativos como Morro do Pai Inácio, Lençóis, Cachoeira da Fumaça e Cachoeira do Funil.',
       category: 'localizacao',

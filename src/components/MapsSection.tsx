@@ -97,6 +97,30 @@ const MapsSection = () => {
       category: 'localizacao',
       image: '/lovable-uploads/6f1482cb-52b3-4d7f-9c6f-3f4f72fde78d.png',
       tags: []
+    },
+    {
+      id: 10,
+      title: 'Trilha do Pico do Barbado - Abaíra/BA',
+      description: 'Visualização 3D artística da trilha para o Pico do Barbado, a montanha mais alta do nordeste brasileiro com 2.021 metros de altitude, localizada em Abaíra, Bahia. O mapa apresenta o percurso da trilha de 4,38 km com dificuldade técnica moderada, utilizando modelagem tridimensional para destacar o relevo e a topografia da região.',
+      category: 'artistico',
+      image: '/lovable-uploads/pico-barbado-artistico.jpg',
+      tags: []
+    },
+    {
+      id: 11,
+      title: 'Salvador Artístico - Primeira Capital do Brasil',
+      description: 'Representação cartográfica artística de Salvador, Bahia, destacando sua importância histórica como primeira capital do Brasil. O mapa utiliza design contemporâneo com paleta de cores em tons de amarelo e preto, evidenciando a malha urbana e características geográficas da cidade através de uma abordagem estética diferenciada.',
+      category: 'artistico',
+      image: '/lovable-uploads/salvador-artistico.jpg',
+      tags: []
+    },
+    {
+      id: 12,
+      title: 'Estádios dos Times do Nordeste - Brasileirão 2025',
+      description: 'Mapa temático-artístico apresentando a localização dos principais estádios de futebol dos times nordestinos no Campeonato Brasileiro 2025. Inclui Arena Fonte Nova (Bahia), Arena Castelão (Fortaleza/Ceará), Ilha do Retiro (Sport) e Barradão (Vitória), com informações de capacidade e características de cada estádio, utilizando design moderno e elementos gráficos esportivos.',
+      category: 'artistico',
+      image: '/lovable-uploads/estadios-nordeste.png',
+      tags: []
     }
   ];
 

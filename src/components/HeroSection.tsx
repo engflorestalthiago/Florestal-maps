@@ -27,7 +27,7 @@ const HeroSection = () => {
           <h2 className="font-montserrat font-semibold text-2xl md:text-4xl lg:text-5xl mb-8 text-primary-light">
             Engenheiro Florestal
           </h2>
-          <p className="font-montserrat font-medium text-xl md:text-2xl mb-12 leading-relaxed max-w-2xl mx-auto">
+          <p className="font-montserrat font-medium text-xl md:text-2xl mb-14 leading-relaxed max-w-2xl mx-auto">
             Portfólio de Mapas
           </p>
           

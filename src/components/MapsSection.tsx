@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Dialog, DialogContent, DialogTrigger } from '@/components/ui/dialog';
 import { MapPin, BarChart3, TrendingUp, Palette, Eye } from 'lucide-react';
+import ZoomableImage from '@/components/ui/ZoomableImage';
 
 interface MapItem {
   id: number;
@@ -196,13 +197,8 @@ const MapsSection = () => {
                       </DialogTrigger>
                       <DialogContent className="max-w-4xl w-full h-[80vh] p-0">
                         <div className="flex flex-col lg:flex-row h-full">
-                          {/* Image Section */}
                           <div className="flex-1 relative">
-                            <img
-                              src={map.image}
-                              alt={map.title}
-                              className="w-full h-full object-contain bg-muted"
-                            />
+                            <ZoomableImage src={map.image} alt={map.title} />
                           </div>
                           
                           {/* Details Section */}

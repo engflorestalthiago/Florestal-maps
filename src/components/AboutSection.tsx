@@ -38,9 +38,9 @@ const AboutSection = () => {
               <div className="relative">
                 <div className="w-80 h-80 rounded-full overflow-hidden shadow-earth border-4 border-primary/20">
                   <img
-                    src="/lovable-uploads/e38e74a0-9077-4177-bfdb-42acee6ea70f.png"
+                    src="/lovable-uploads/thiago-professional.jpg"
                     alt="Thiago Martins - Engenheiro Florestal"
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-cover object-center"
                   />
                 </div>
                 <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground rounded-full p-4 shadow-forest animate-float">

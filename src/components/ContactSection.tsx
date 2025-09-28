@@ -15,30 +15,23 @@ const ContactSection = () => {
     {
       name: 'Instagram', 
       icon: Instagram,
-      url: '#',
+      url: 'https://www.instagram.com/engflorestalthiago/',
       color: 'hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500',
       description: 'Acompanhe projetos'
     },
     {
       name: 'WhatsApp',
       icon: MessageCircle,
-      url: '#',
+      url: 'https://wa.me/5573981397909',
       color: 'hover:bg-green-500',
       description: 'Mensagem direta'
     },
     {
       name: 'Email',
       icon: Mail,
-      url: 'mailto:contato@thiagomartins.eng.br',
+      url: 'mailto:thiagocmarts@gmail.com',
       color: 'hover:bg-red-500',
       description: 'Envie um email'
-    },
-    {
-      name: 'Telefone',
-      icon: Phone,
-      url: 'tel:+5511999999999',
-      color: 'hover:bg-primary',
-      description: 'Ligue agora'
     }
   ];
 

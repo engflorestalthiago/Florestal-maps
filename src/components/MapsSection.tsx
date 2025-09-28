@@ -176,7 +176,9 @@ const MapsSection = () => {
                     <img
                       src={map.image}
                       alt={map.title}
-                      className="w-full h-64 object-cover transition-smooth group-hover:scale-105"
+                      className={`w-full transition-smooth group-hover:scale-105 ${
+                        map.id === 7 ? 'h-80 object-contain bg-muted' : 'h-64 object-cover'
+                      }`}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-smooth" />
                     

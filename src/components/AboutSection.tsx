@@ -40,7 +40,7 @@ const AboutSection = () => {
                   <img
                     src="/lovable-uploads/e38e74a0-9077-4177-bfdb-42acee6ea70f.png"
                     alt="Thiago Martins - Engenheiro Florestal"
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
                 <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground rounded-full p-4 shadow-forest animate-float">

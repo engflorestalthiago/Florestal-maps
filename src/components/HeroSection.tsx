@@ -17,7 +17,7 @@ const HeroSection = () => {
         backgroundAttachment: 'fixed'
       }}
     >
-      <div className="absolute inset-0 bg-gradient-hero opacity-80" />
+      <div className="absolute inset-0 bg-gradient-hero opacity-30" />
       
       <div className="relative z-10 container mx-auto px-6 text-center text-white">
         <div className="max-w-4xl mx-auto animate-fade-in">

@@ -131,7 +131,7 @@ const ZoomableImage: React.FC<ZoomableImageProps> = ({ src, alt }) => {
           src={src}
           alt={alt}
           draggable={false}
-          className="max-w-none will-change-transform"
+          className="max-w-full max-h-full object-contain will-change-transform"
           style={{
             transform: `translate3d(${translate.x}px, ${translate.y}px, 0) scale(${scale})`,
             transformOrigin: "center center",

@@ -28,7 +28,7 @@ const HeroSection = () => {
             Engenheiro Florestal
           </h2>
           <p className="font-montserrat font-medium text-xl md:text-2xl mb-12 leading-relaxed max-w-2xl mx-auto">
-            Especialista em mapeamento temático, analítico e artístico para o setor ambiental e florestal
+            Portfólio de Mapas
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
